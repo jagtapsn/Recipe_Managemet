@@ -1,0 +1,33 @@
+# Spring local Development profile with H2 database
+spring:
+  # H2 Web Console
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: true
+        web-allow-others: true
+  # H2 Datasource        
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:~/h2/testdb
+    username: root
+    password: root
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  
+  http:
+    log-request-details: true
+     
+# Logger settings  
+#logging:
+ #level: 
+  #spring:
+   #h2:
+    #console: debug
+
+#debug: true
