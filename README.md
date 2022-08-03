@@ -28,7 +28,7 @@ The **Recipe Management Service** exposes an endpoints related to the recipe, of
 - GET::/api/recipesfilters : Retrieve the recipe details by receipeType ,ingredients ,servings,instrutions or any parameter.
 - GET::/api/recipes : Retrieve the details of all recipe.		
 - GET::/api/recipes/{name} : Retrieve the details of recipe by name.		
-- POST::/api/create: To create the recipe.
-- DELETE::/api/recipes : To delete the all recipe details.
+- POST::/api/recipes/create: To create the recipe.
+- DELETE::/api/recipes/delete : To delete the all recipe details.
 - DELETE::/api/recipes/{name} : To delete the recipe details by recipe name.
-- PUT::/api/recipes : To update recipe details by recipe name.
+- PUT::/api/recipes/{name} : To update recipe details by recipe name.
